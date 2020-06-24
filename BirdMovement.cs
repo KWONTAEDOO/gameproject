@@ -17,7 +17,7 @@ public class BirdMovement : MonoBehaviour
 	[SerializeField]
 
 	private RandomSound birdFootSteps;
-    // Start is called before the first frame update
+   
     void Start()
     {
 		birdAgent = GetComponent<NavMeshAgent>();
@@ -26,7 +26,6 @@ public class BirdMovement : MonoBehaviour
 		_birdAnimator.SetBool("Walking", true);
 	}
 
-    // Update is called once per frame
     void Update()
     {
 		birdAgent.SetDestination(frogTranform.position);
