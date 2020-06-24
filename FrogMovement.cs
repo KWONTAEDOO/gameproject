@@ -21,7 +21,7 @@ public class FrogMovement : MonoBehaviour
 	[SerializeField]
 	private RandomSound playerFootSteps;
 
-	// Start is called before the first frame update
+	
 	void Start()
 	{
 		frogAnimator = GetComponent<Animator>();
@@ -30,7 +30,7 @@ public class FrogMovement : MonoBehaviour
 	}
 
 	
-	// Update is called once per frame
+
 	void Update()
 	{
 		horizontalMovement = Input.GetAxisRaw("Horizontal");
