@@ -20,13 +20,12 @@ public class flyspawner : MonoBehaviour
 	public static int totalFlies;
 
 
-    // Start is called before the first frame update
+
     void Start()
     {
 		totalFlies = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
         while(totalFlies < totalFlymin)
