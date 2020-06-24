@@ -32,7 +32,7 @@ public class GameState : MonoBehaviour
 	private FrogMovement frogMovement;
 
 	private PlayerHealth playerHealth;
-    // Start is called before the first frame update
+  
     void Start()
     {
 		Cursor.visible = false;
@@ -41,7 +41,7 @@ public class GameState : MonoBehaviour
 
 		playerHealth = player.GetComponent<PlayerHealth>();
 
-		//시작때 움직이는거 방지 (여기서 어려움)왜 true로 설정해줘야하는지
+		//시작때 움직이는거 방지 왜 frog 만 true로 설정해줘야 진행?
 		frogMovement.enabled = true;
 
 		birdMovement.enabled = false;
